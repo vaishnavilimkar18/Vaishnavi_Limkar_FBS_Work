@@ -1,9 +1,8 @@
-check = input("Enter a alphabet:")
+num = int(input("Enter a number :"))
+fact = 1
 
-if check.isalpha() and len(check) == 1:
-    if check.lower() in ['a','e','i','o','u']:
-        print("it is a vowel")
-    else:
-        print("it is a Consonant")
-else:
-      print("Please enter a single valid alphabet.")
+
+for i in range(1,num +1):
+    fact*= i
+
+print(f"factiorial of {num} is ",fact)

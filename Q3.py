@@ -1,8 +1,14 @@
-a = float(input("Enter first angle: "))
-b = float(input("Enter second angle: "))
-c = float(input("Enter third angle: "))
- 
-if a > 0 and b > 0 and c > 0 and (a+b+c) == 180:
-   print("The traingle is valid")
-else:
-  print("The traingle is Not valid")
+num = int(input("Enter basic amount:"))
+DA = 0.10*num
+TA = 0.12*num
+HRA = 0.15*num
+
+Sum = num*(1 + 0.10 + 0.12 + 0.15)
+
+sum = num * 1.37
+
+print('Dear Allowance is:',DA)
+print('Travel Allowance is:',TA)
+print('House rent Allowance is:',HRA)
+print('Total Salary is',sum)
+  
